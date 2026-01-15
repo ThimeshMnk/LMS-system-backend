@@ -4,6 +4,12 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\WebAuthController;
 use App\Http\Controllers\Teacher\DashboardController;
 use App\Http\Controllers\Teacher\LectureController;
+
+
+Route::get('/', function () {
+    return view('welcome');
+});
+
 // Auth Routes
 Route::get('/teacher/login', [WebAuthController::class, 'showLogin'])->name('login');
 Route::post('/teacher/login/attempt', [WebAuthController::class, 'loginAdmin'])->name('admin.login.attempt');
