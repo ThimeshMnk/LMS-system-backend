@@ -26,7 +26,7 @@
         <h2 class="text-xl font-bold">Quick Actions</h2>
     </div>
     <div class="flex gap-4">
-        <a href="{{ route('admin.lectures.create') }}" class="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700">Add New Lecture</a>
+        <a href="{{ route('admin.courses.create') }}" class="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700">Add New Lecture</a>
         <a href="#" class="bg-slate-100 text-slate-700 px-4 py-2 rounded-lg hover:bg-slate-200">View Student Progress</a>
     </div>
 </div>

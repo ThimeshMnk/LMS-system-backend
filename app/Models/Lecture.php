@@ -13,9 +13,12 @@ class Lecture extends Model
 
     protected $fillable = [
         'user_id',
+        'course_id', 
         'title',
+        'image',     
         'description',
-        'gdrive_id'
+        'gdrive_id',
+        'duration'   
     ];
 
     // Get the teacher who owns this lecture
@@ -35,4 +38,8 @@ class Lecture extends Model
     {
         return $this->hasMany(QnaMessage::class);
     }
+
+    public function course() {
+    return $this->belongsTo(Course::class);
+}
 }
